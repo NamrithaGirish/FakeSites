@@ -9,3 +9,4 @@ if st.button("CHECK"):
     st.title("FAKE NEWS")
   else :
     st.title("GENUINE NEWS")
+   
