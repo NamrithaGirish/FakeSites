@@ -1,3 +1,2 @@
 # FakeSites
-#ENTER THE NAME OF WEBSITE OR URL 
-#IT WILL RETURN WHETHER THE SITE PUBLISHES GENUINE NEWS OR NOT
+Application that validates the genuinity of the website
