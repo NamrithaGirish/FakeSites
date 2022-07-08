@@ -5,10 +5,13 @@ import joblib
 model_nb = joblib.load('fake-news')
 
 #user input 
-st.title("SPAM HAM CLASSIFICATION")
-ip = st.text_input("Enter your message:")
+st.title("FAKE NEWS SITE DETECTOR")
+ip = st.text_input("ENTER WEBSITE URL/ NAME")
 
-#predict if the entered message is spam or ham 
+#predict legitimacy of website 
 op = model_nb.predict([ip])
-if st.button('PREDICT'):
-  st.title(op[0])  #prints the output as spam or ham
+if st.button('CHECK'):
+  if op[0]==0:
+    st.title("FAKE WEBSITE")
+  else:
+    st.title("LEGITIMATE WEBSITE")  
