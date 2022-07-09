@@ -20,6 +20,6 @@ for i in ip:
 op = model_nb.predict([inpt])
 if st.button('CHECK'):
   if op[0]==0:
-    st.subheader("FAKE WEBSITE")
+    st.header("FAKE WEBSITE")
   else:
-    st.subheader("LEGITIMATE WEBSITE")  
+    st.header("LEGITIMATE WEBSITE")  
