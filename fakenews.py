@@ -8,8 +8,16 @@ model_nb = joblib.load('fake-news')
 st.title("FAKE NEWS SITE DETECTOR")
 ip = st.text_input("ENTER WEBSITE URL/ NAME")
 
+#modifying input
+inpt =''
+for i in ip:
+  if i.isspace():
+    continue
+  else:
+    inpt+=i
+
 #predict legitimacy of website 
-op = model_nb.predict([ip])
+op = model_nb.predict([inpt])
 if st.button('CHECK'):
   if op[0]==0:
     st.title("FAKE WEBSITE")
