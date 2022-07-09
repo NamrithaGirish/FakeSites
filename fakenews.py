@@ -5,7 +5,7 @@ import joblib
 model_nb = joblib.load('fake-news')
 
 #user input 
-st.title("FAKE NEWS SITE DETECTOR")
+st.title("FAKE NEWS WEBSITE DETECTOR")
 ip = st.text_input("ENTER WEBSITE URL/ NAME")
 
 #modifying input
