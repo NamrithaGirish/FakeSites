@@ -2,7 +2,7 @@ import streamlit as st
 import joblib 
 
 #LOADING JOBLIB MODEL 
-model = joblib.load('fake-news')
+model = joblib.load('fake-news-site')
 
 #user input 
 st.title("FAKE NEWS WEBSITE DETECTOR")
